@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan</title>
+    <!-- Load jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Load jQuery plugin (contoh: DataTables) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+    <!-- CSS kustom -->
+    <style>
+        /* CSS kustom di sini */
+    </style>
+</head>
+<body>
+    <h1>Perpustakaan</h1>
+    
+    <!-- Tabel untuk menampilkan daftar buku -->
+    <table id="bookTable">
+        <thead>
+            <tr>
+                <th>Judul</th>
+                <th>Penulis</th>
+                <th>Tahun Terbit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data buku akan dimasukkan di sini oleh JavaScript -->
+        </tbody>
+    </table>
+    
+    <!-- Script JavaScript -->
+    <script>
+        $(document).ready(function() {
+            // Data buku sementara
+            var dataBuku = [
+                { judul: "Harry Potter and the Philosopher's Stone", penulis: "J.K. Rowling", tahun: 1997 },
+                { judul: "To Kill a Mockingbird", penulis: "Harper Lee", tahun: 1960 },
+                { judul: "The Great Gatsby", penulis: "F. Scott Fitzgerald", tahun: 1925 }
+            ];
+            
+            // Memasukkan data buku ke dalam tabel
+            for (var i = 0; i < dataBuku.length; i++) {
+                var book = dataBuku[i];
+                $('#bookTable tbody').append('<tr><td>' + book.judul + '</td><td>' + book.penulis + '</td><td>' + book.tahun + '</td></tr>');
+            }
+            
+            // Menginisialisasi DataTables (plugin jQuery)
+            $('#bookTable').DataTable();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Background color */
+}
+
+.container-fluid {
+    max-width: 1200px; /* Max width for the content */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff; /* Navbar background color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Navbar shadow */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333; /* Navbar brand color */
+}
+
+.nav-link {
+    color: #333; /* Navbar links color */
+}
+
+.nav-link:hover {
+    color: #007bff; /* Navbar links hover color */
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    font-weight: bold;
+    color: #333; /* Card title color */
+}
+
+.card-text {
+    color: #555; /* Card text color */
+}
+
+.btn-dark {
+    background-color: #343a40; /* Button background color */
+    border-color: #343a40; /* Button border color */
+    color: #fff; /* Button text color */
+}
+
+.btn-dark:hover {
+    background-color: #23272b; /* Button background color on hover */
+    border-color: #23272b; /* Button border color on hover */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

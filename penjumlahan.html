@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="penjumlahan.css">
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    <h2>Kalkulator Sederhana</h2>
+    <form id="calculatorForm" action="result.html" method="get">
+        <label for="num1">Bilangan 1:</label>
+        <input type="number" id="num1" name="num1" required><br><br>
+        <label for="num2">Bilangan 2:</label>
+        <input type="number" id="num2" name="num2" required><br><br>
+        <label for="operation">Operasi:</label>
+        <select id="operation" name="operation">
+            <option value="add">Penjumlahan (+)</option>
+            <option value="subtract">Pengurangan (-)</option>
+            <option value="multiply">Perkalian (*)</option>
+            <option value="divide">Pembagian (/)</option>
+        </select><br><br>
+        <button type="submit">Hitung</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

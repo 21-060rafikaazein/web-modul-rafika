@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="result.css">
+    <title>Hasil Perhitungan</title>
+</head>
+<body>
+    <h2>Hasil Perhitungan</h2>
+    <p>Hasil perhitungan adalah: <span id="result"></span></p>
+
+    <script>
+        // Ambil hasil perhitungan dari local storage dan tampilkan di halaman
+        const result = localStorage.getItem('result');
+        document.getElementById('result').innerText = result;
+        
+        // Hapus hasil perhitungan dari local storage agar tidak tersimpan setelah pengguna menutup halaman
+        localStorage.removeItem('result');
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 2</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <section id="Formulir Anggota">
+        <h1 style="color: navy; font-size: 24px;">FORMULIR ANGGOTA PERPUSTAKAAN</h1>
+        <table border="1">
+            <tr>
+                <th>Formulir Anggota Perpustakaan Program Studi Ilmu Perpustakaan dan Sains Informasi</th>
+            </tr>
+            <tr>
+                <td>Nama: Rafika <br>Nim: 210709060 <br>Alamat: Sertia Budi <br>Jenis Kelamin: Perempuan <br>Email: rafikazein7@gmail.com <br>No HP: 082269946656<br>Tempat Lahir: Rantau Prapat <br>Tanggal Lahir: 07 Agustus 2002   
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="Koleksi Buku Perpustakaan">
+        <h1 style="color: navy; font-size: 24px;">KOLEKSI BUKU PERPUSTAKAAN</h1>
+        <Table border="1">
+            <tr>
+                <th>Judul Buku</th>
+                <th>Penulis</th>
+                <th>Tahun Terbit</th>
+                <th>No Panggil</th>
+            </tr>
+            <tr>
+                <td>Atomic Habits</td>
+                <td>James Clear</td>
+                <td>2022</td>
+                <td>155.25 CLE a</td>
+            </tr>
+            <tr>
+                <td>Hafalan Shalat Delisa</td>
+                <td>Tere Liye</td>
+                <td>2012</td>
+                <td>899.221.3</td>
+            </tr>
+        </Table>
+    </section>
+
+    <section id="Form-Pemesanan">
+        <h1 style="color: navy; font-size: 24px;">FORM PEMESANAN</h1>
+        <form action="Proses_Pemesanan.php" method="Post">
+            <label for="Judul">Judul Buku:</label><br>
+            <input type="text" id="Judul" name="Judul"><br>
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama"><br>
+            <label for="Nim">Nim</label><br>
+            <textarea id="Nim" name="Nim"></textarea><br>
+            <input type="submit" value="submit">
+        </form>       
+    </section>
+
+    <section id="Form-Perpanjangan">
+        <h1 style="color: navy; font-size: 24px;">FORM PERPANJANGAN</h1>
+        <form action="Proses_Perpanjangan.php" method="Post">
+            <label for="kode_buku">Kode Buku:</label><br>
+            <input type="text" id="kode_buku" name="kode-buku"><br>
+            <label for="nama">Nama Peminjam:</label><br>
+            <input type="text" id="nama" name="nama"><br>
+            <label for="Nim">Nim:</label><br>
+            <input type="Nim" id="Nim" name="Nim"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
